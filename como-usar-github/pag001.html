@@ -64,7 +64,43 @@
     </ol>
     <h2>&#x1F389; <strong>Parabéns seu projeto está no GitHub</strong> &#x1F389;</h2>
     <h2>Atualizando o repositório</h2>
-    <p></p>
+    <p>Antes de autalizar o repositório precisamos ter em mente algumas coisas. Mas vamos vendo os passos e entendendo cada um.
+        <br>
+    <ol>
+        <li>
+            Abrir o cmd
+        </li>
+        <li>
+            Entrar na pasta que está a ser sincronizada como repositório
+            <ul><li>cd pasta-repositório</li></ul>
+        </li>
+        <li>
+            Verificar status de modificação do arquivo:
+            <ul><li>git status</li></ul>
+        </li>
+        <li>
+            Reconhecer pelo gerenciador local (GIT):
+            <ul><li>git add .</li></ul>
+        </li>
+        <li>
+            Adicionar no gerenciador Git:
+            <ul><li>git commit - "descrição ou versão"</li></ul>
+        </li>
+        <li>
+            Verificar se é a última modificação de fato (verifica se é a última alteração que você fez, pois pode ter o caso de outros também estar atualizando o projeto):
+            <ul><li>git pull origin main</li></ul>
+        </li>
+        <li>
+            Atualizar repositório remoto do GitHub (esse passo exijirá o login e senha):
+            <ul><li>git push origin main</li></ul>
+        </li>
+        <h2>Detalhe importante</h2>
+        <p>Quando se trata de um projeto com vários programadores e você está a modificar algo, o primeiro comando antes de tudo é usar o:
+            <ul><li>git pull origin main</li></ul>
+        Nesse caso a mensagem deverá ser: Already up to date. Caso contrário deverá ser atualizado para então ser modificado, pois poderá inutilizar o trabalho de quem estava a mexer.
+        </p>
+    </ol>
+    </p>
     <p><a href="index.html" rel="prev">Início</a></p>
 </body>
 </html>
