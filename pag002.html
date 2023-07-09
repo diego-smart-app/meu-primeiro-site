@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Desktop</title>
+    <title>Versionamento de controle de software (VCS)</title>
 </head>
 <body>
-    <h1>O que é GIT? O que é versionamento?</h1>
-    <p>Git e GitHub são coisas diferentes, de forma grosseira GIT é um software de controle de versão (VCS) e GitHub é uma plataforma de redes sociais pra programadores.</p>
-    <img src="imagens/git_200.png" alt="Logo do Git">
-    <h2>GIT e versionamento de software</h2>
-    <p>Software para versionamento de software (controle de versões). Um exemplo é que você tenha criado uma página web em HTML e CSS, então cria uma pasta pra organizar o projeto, se está funcionando ela é salva, em outro momento alguma melhoria é implementada, assim pra cada modificação é criada uma modificação. No caso existem várias versões, aquela básica, a que melhorou, a que não funcionou por uma falha no programa. Nesse caso várias versões estão criadas, porém alguns problemas podem ocorrer, principalmente quando trabalhado em equipe, pois são muitas pessoas atuando em partes diferentes do software. Pra isso não virar bagunça é necessário um gerenciador de versões, no caso o GIT é esse software.</p>
-    <p>Importante ressaltar que o GIT não é o único, porém o mais popular, mas vamos entender como é feito o controle de versões. Quando alguém faz uma atualização no repositório local é feito um commit, depois um push para o repositório remoto (se tratando do VCS distribuído - GIT).</p>
-    <h3>Principais vantagens de usar um VCS</h3>
+    <h1>Mas o que é um VCS?</h1>
+    <p>Como próprio nome diz, versionamento de software é usado para controlar as versões do código fonte, ou do projeto como um todo. Por exemplo, você criou uma página web em HTML e CSS, o que faz inicialmene é criar uma pasta pra organizar seu projeto, se está funcionando sem problemas, então essa versão é salva, em outro momento alguma melhoria é feita, assim pra cada modificação é salvo uma nova versão (v0.1, v0.2, v1.3, etc). Desta maneira várias versões são criadas, aquela básica, a que melhorou, a que não funcionou por uma falha no programa entre outras. Nesse caso várias versões estão criadas, porém alguns problemas podem ocorrer, principalmente quando o projeto está sendo criado por uma equipe, pois são muitas pessoas atuando em partes diferentes no projeto. É necessário que cada um faça sua parte individualmente e caso ocorra modificações por pessoas diferentes, é de grande importância verificar e controlar a modificação correta, é aí que o versionador tem grande importância.</p>
+    <hr>
+    <h3>Quais vantagens de usar um VCS?</h3>
     <p><ul>
         <li>Controle de histórico</li>
         <li>Trabalho em equipe</li>
@@ -20,7 +17,24 @@
         <li>Segurança</li>
         <li>Organização</li>
     </ul></p>
-    <h3>Criação do GIT</h3>
+    <hr>
+    <h2>O que são Git e GitHub?</h2>
+    <hr>
+    <p>Git e GitHub são coisas diferentes, mas com o mesmo propósito, de forma grosseira podemos dizer que ambos são repositórios versionadores, porém o GIT é local e o GitHub é remoto.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/git_100.png" type="image/png">
+        <img src="imagens/git_300.png" alt="Imagem GIT">
+    </picture>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/versus-50.jpg" type="image/png">
+        <img src="imagens/versus-150.jpg" alt="Imagem versus">
+    </picture>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/github_100.jpg" type="image/png">
+        <img src="imagens/github_300.jpg" alt="Imagem GGITHUB">
+    </picture>
+    <hr>
+    <h3>Breve história do GIT</h3>
     <p>O GIT foi criado em 2005 pelo criador do kernel do Linux, foi feito para atuar melhor que outros versionadores da época. A sigla definida por ele pode ser:</p>
     <p><ul>
         <li>Três letras do alfabeto</li>
@@ -28,10 +42,13 @@
         <li>Global Information Tracker</li>
         <li>Goddamn idiotic truckload of shit</li>
     </ul></p>
-    <h2>GitHub e pra que serve</h2>
-    <img src="imagens/github_200.jpg" alt="Logo do GitHub">
-    <p>O GitHub é o repositório remoto, relembrando a sequência: usuário edita o código-fonte, faz um commit pro GIT (repositório local) e depois um push pro GitHub (repositório remoto).</p>
-    <p>Nesse repositório é possível armazenar, contribuir, ter uma referência pra oportunidades de trabalho, etc. Se resume também de uma grande comunidade para os programas open source.</p>
+    <hr>
+    <h3>Breve história do GitHub</h3>
+    <p>Criado em 2008 por um grupo de 4 pessoas, tem um código proprietário baseado no Git, porém foi comprado pela Microsoft em 2018 por míseros US$ 7,5 bilhões.</p>
+    <hr>
+    <h2>O GitHub e seu propósito</h2>
+    <p>O GitHub é o repositório remoto, segue uma determinada sequência: usuário edita o código-fonte, faz um <code>commit</code> pro GIT (repositório local) e depois um <code>push</code> pro GitHub (repositório remoto).</p>
+    <p>O GitHub tem características de redes sociais, nesse repositório é possível armazenar, contribuir, ter uma referência pra oportunidades de trabalho, etc. Se resume também de uma grande comunidade para os programas open source.</p>
     <h3>Características do GitHub</h3>
     <p><ul>
         <li>Repositório ilimitados</li>
@@ -41,36 +58,67 @@
         <li>Colaboração</li>
         <li>Forks (continuar outro projeto respeitando a licença)</li>
     </ul></p>
+    <hr>
     <h3>Criar uma conta no GitHub</h3>
     <p>Criar uma conta no é simples, basta acessar o <a href="https://github.com/signup?source=login" target="_blank" rel="external"><strong><mark>link</mark></strong></a> e fazer seu cadastro gratuito.</p>
-    <h3>Breve história do GitHub</h3>
-    <p>Criado em 2008 por um grupo de 4 pessoas, tem um código proprietário baseado no Git, porém foi comprado pela Microsoft em 2018 por míseros US$ 7,5 bilhões.</p>
-    <h3>Vamos agora instalar as ferramentas necessárias para utilizar o repositório</h3>
+    <hr>
+    <h3>Vamos agora instalar as ferramentas necessárias para utilizar o repositório, são elas:</h3>
     <p><ul>
         <li>GitHub Desktop</li>
         <li>GIT</li>
         <li>VScode (poderia ser outro editor de código-fonte)</li>
     </ul></p>
+    <hr>
     <h3>Usando as ferramentas</h3>
-    <img src="imagens/diagrama_logico_usuario_repositorios_200.png" alt="Demonstração da organização de versionamento usando GIT e GitHub">
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/diagrama_logico_usuario_repositorios-200.png" type="image/png">
+        <img src="imagens/diagrama_logico_usuario_repositorios-500.png" alt="Tela de criar repositório">
+    </picture>
+    <hr>
+    <h4>Passos da utilização das ferramentas</h4>
     <p>O primeiro passo é abrir o GitHub Desktop e criar um novo repositório (Create a New Repository on your hard drive...)</p>
-    <img src="imagens/novo_repositorio_redimensionada_200.png" alt="Tela de criação do repositório">
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/novo_repositorio-200.png" type="image/png">
+        <img src="imagens/novo_repositorio-500.png" alt="Tela de criar repositório">
+    </picture>
     <p>Depois de clicar, outra tela exibirá para que sejam preenchidas as informações do projeto e será explicado um a um.</p>
-    <img src="imagens/opcoes_criacao_repositorio_200.png" alt="Tela quando repositório está sendo criado">
-    <h4>Name</h4>
-    <p>Nome do seu repositório, evite colocar caracteres especiais e espaços.</p>
-    <h4>Description</h4>
-    <p>Descrição da sua escolha, escreva uma breve apresentação do projeto, pra que será usado e principais características.</p>
-    <h4>Local PATH</h4>
-    <p>Local que o projeto será armazenado no computador, vale ressaltar que por organização é importante deixar tudo numa mesma pasta. Ao fazer isso uma pasta com nome escolhido é criada nesse local. Clique no check box abaixo de local PATH, assim a descrição será exibida assim que o repositório for selecionado.</p>
-    <h4>GIT ignore</h4>
-    <p>Deixe em branco, pois serve para o GIT ignorar se algum determinado tipo de arquivo for modificado.</p>
-    <h4>Licence</h4>
-    <p>Essa parte é muito importante na questão jurídica, aqui é determinado o que outro usuário pode fazer com seu arquivo, você pode conferir os tipos de licenças <a href="https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository" target="_blank" rel="external"><strong><mark>aqui.</mark></strong></a></p>
-    <p>Depois de tudo preenchido é só clicar em criar. Essa ação criará uma pasta no diretório indicado em loca PATH. Dessa é só criar ou colocar seu projeto novo na pasta citada. Toda vez que houver alguma alteração nos arquivos dessa pasta o GitHub Desktop irá indicar uma mudança e está pronto para fazer a atualização no repositório local e também o remoto, conforme imagem.</p>
-    <img src="imagens/percapcao_github_desktop_200.png" alt="Alteração no repositório percebida pelo GitHub Desktop">
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/opcoes_criacao_repositorio-200.png" type="image/png">
+        <img src="imagens/opcoes_criacao_repositorio-500.png" alt="Tela de criar repositório">
+    </picture>
+    <ul>
+        <li>
+            <h4>Name</h4>
+            <p>Nome do seu repositório, evite colocar caracteres especiais e espaços.</p>
+        </li>
+        <li>
+            <h4>Description</h4>
+            <p>Descrição da sua escolha, escreva uma breve apresentação do projeto, pra que será usado e principais características.</p>
+        </li>
+        <li>
+            <h4>Local PATH</h4>
+            <p>Local que o projeto será armazenado no computador, vale ressaltar que por organização é importante deixar tudo numa mesma pasta. Ao fazer isso uma pasta com nome escolhido é criada nesse local. Clique no check box abaixo de local PATH, assim a descrição será exibida assim que o repositório for selecionado.</p>
+        </li>
+        <li>
+            <h4>GIT ignore</h4>
+            <p>Deixe em branco, pois serve para o GIT ignorar se algum determinado tipo de arquivo for modificado.</p>
+        </li>
+        <li>
+            <h4>Licence</h4>
+            <p>Essa parte é muito importante na questão jurídica, aqui é determinado o que outro usuário pode fazer com seu arquivo, você pode conferir os tipos de licenças <a href="https://docs.github.com/pt/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository" target="_blank" rel="external"><strong><mark>aqui.</mark></strong></a></p>
+        </li>
+    </ul>
+    <hr>
+    <p>Depois de tudo preenchido é só clicar em criar. Essa ação criará uma pasta no diretório indicado em local PATH. Dessa é só criar ou colocar seu projeto novo na pasta citada. Toda vez que houver alguma alteração nos arquivos dessa pasta o GitHub Desktop irá indicar uma mudança e está pronto para fazer a atualização no repositório local e também o remoto, conforme imagem.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/percapcao_github_desktop-200.png" type="image/png">
+        <img src="imagens/percapcao_github_desktop-500.png" alt="Tela de criar repositório">
+    </picture>
     <p>Na demonstração apresentada vemos uma mudança no repositório selecionado, nesse caso basta colocar um título da mudança e uma descrição, aí é só fazer um <em>commit</em> (atualização do repositório local). Depois um push para atualização do repositório remoto.</p>
-    <img src="imagens/percapcao_github_desktop_200.png" alt="Diagrama lógico do utilizador e os repositórios">
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/percapcao_github_desktop-200.png" type="image/png">
+        <img src="imagens/percapcao_github_desktop-500.png" alt="Tela de criar repositório">
+    </picture>
     <p><a href="index.html" rel="prev"><img src="imagens/voltar_80.png" alt="Voltar"></a></p>
 </body>
 </html>
