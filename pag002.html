@@ -22,15 +22,15 @@
     <hr>
     <p>Git e GitHub são coisas diferentes, mas com o mesmo propósito, de forma grosseira podemos dizer que ambos são repositórios versionadores, porém o GIT é local e o GitHub é remoto.</p>
     <picture>
-        <source media="(max-width: 750px)" srcset="imagens/git_100.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagens/git_150.png" type="image/png">
         <img src="imagens/git_300.png" alt="Imagem GIT">
     </picture>
     <picture>
-        <source media="(max-width: 750px)" srcset="imagens/versus-50.jpg" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagens/versus-150.jpg" type="image/png">
         <img src="imagens/versus-150.jpg" alt="Imagem versus">
     </picture>
     <picture>
-        <source media="(max-width: 750px)" srcset="imagens/github_100.jpg" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagens/github_150.jpg" type="image/png">
         <img src="imagens/github_300.jpg" alt="Imagem GGITHUB">
     </picture>
     <hr>
@@ -71,20 +71,21 @@
     <hr>
     <h3>Usando as ferramentas</h3>
     <picture>
-        <source media="(max-width: 750px)" srcset="imagens/diagrama_logico_usuario_repositorios-200.png" type="image/png">
-        <img src="imagens/diagrama_logico_usuario_repositorios-500.png" alt="Tela de criar repositório">
+        <source media="(max-width: 750px)" srcset="imagens/estrutura_repositorio-300.png" type="image/png">
+        <img src="imagens/estrutura_repositorio-700.png" alt="Tela de criar repositório">
     </picture>
+    <p>Na imagem é mostrado a estrutura básica de como as ferramentas são relacionadas umas com as outras. É preciso entender que pra cada ação existe um termo ou comando feito do usuário depois ou antes de uma modificação do código-fonte, e isso é ilustrado na imagem. Primeiramente o usuário usa um editor de código-fonte, no caso mostrado o VScode, quando a edição ou modificação é finalizada, uma nova versão deve ser salva localmente e remotamente nos repositórios, o primeiro comando para atualização do repositório local é o <code>commit</code>. Depois disso é feito um <code>push</code> para atualização remota, mas existe a lógica inversa quando o usuário deseja editar a última versão colocada no repositório remoto, esse comando é o <code>pull</code>. Esse último comando é necessário quando mais de uma pessoa tem acesso ao mesmo repositório, sendo assim a edição do mesmo poderia ser feito por outra pessoa.</p>
     <hr>
     <h4>Passos da utilização das ferramentas</h4>
     <p>O primeiro passo é abrir o GitHub Desktop e criar um novo repositório (Create a New Repository on your hard drive...)</p>
     <picture>
-        <source media="(max-width: 750px)" srcset="imagens/novo_repositorio-200.png" type="image/png">
-        <img src="imagens/novo_repositorio-500.png" alt="Tela de criar repositório">
+        <source media="(max-width: 750px)" srcset="imagens/novo_repositorio-400.png" type="image/png">
+        <img src="imagens/novo_repositorio-700.png" alt="Tela de criar repositório">
     </picture>
     <p>Depois de clicar, outra tela exibirá para que sejam preenchidas as informações do projeto e será explicado um a um.</p>
     <picture>
-        <source media="(max-width: 750px)" srcset="imagens/opcoes_criacao_repositorio-200.png" type="image/png">
-        <img src="imagens/opcoes_criacao_repositorio-500.png" alt="Tela de criar repositório">
+        <source media="(max-width: 750px)" srcset="imagens/opcoes_criacao_repositorio-400.png" type="image/png">
+        <img src="imagens/opcoes_criacao_repositorio-700.png" alt="Tela de criar repositório">
     </picture>
     <ul>
         <li>
@@ -109,16 +110,13 @@
         </li>
     </ul>
     <hr>
-    <p>Depois de tudo preenchido é só clicar em criar. Essa ação criará uma pasta no diretório indicado em local PATH. Dessa é só criar ou colocar seu projeto novo na pasta citada. Toda vez que houver alguma alteração nos arquivos dessa pasta o GitHub Desktop irá indicar uma mudança e está pronto para fazer a atualização no repositório local e também o remoto, conforme imagem abaixo.</p>
+    <p>Depois de tudo preenchido é só clicar em criar. Essa ação criará uma pasta no diretório indicado em local PATH. Dessa é só criar ou colocar seu projeto novo na pasta citada. Toda vez que houver alguma alteração nos arquivos dessa pasta o GitHub Desktop irá indicar as mudanças que houve na pasta e mostrará cada parte editada, nesse ponto o projeto pode atualizado no repositório local e também no repositório remoto, conforme imagem abaixo veja as linhas coloridas que indicam as alterações na pasta do projeto.</p>
     <picture>
-        <source media="(max-width: 750px)" srcset="imagens/percapcao_github_desktop-200.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagens/percapcao_github_desktop-400.png" type="image/png">
         <img src="imagens/percapcao_github_desktop-500.png" alt="Tela de criar repositório">
     </picture>
-    <p>Na demonstração apresentada vemos uma mudança no repositório selecionado, nesse caso basta colocar um título da mudança e uma descrição, aí é só fazer um <em>commit</em> (atualização do repositório local). Depois um push para atualização do repositório remoto.</p>
-    <picture>
-        <source media="(max-width: 750px)" srcset="imagens/percapcao_github_desktop-200.png" type="image/png">
-        <img src="imagens/percapcao_github_desktop-500.png" alt="Tela de criar repositório">
-    </picture>
+    <p>Quando ocorre qualquer mudança na pasta o GitHub Desktop habilita o projeto para o usuário fazer um <em>commit</em> (atualização do repositório local). Depois dele outra tela é exibida para fazer um <code>push</code> para atualização do repositório remoto.</p>
+    <p>Depois desses passos seu repositório local e remoto está devidamente atualizado e organizado, coisas que devem ser bem familiarizada por um bom programador, afinal quem desenvolve um software se preocupa com cada comando, cada detalhe e na organização principalmente não deve ser diferente.</p>
     <p><a href="index.html" rel="prev"><img src="imagens/voltar_80.png" alt="Voltar"></a></p>
 </body>
 </html>
